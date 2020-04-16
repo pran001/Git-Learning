@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r4T-Ki-1I7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kjR-Ob-tdC">
+            <objects>
+                <viewController id="r4T-Ki-1I7" customClass="ViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ke8-Y3-O41">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boZ-vG-BTr">
+                                <rect key="frame" x="133" y="399.5" width="148" height="97"/>
+                                <color key="backgroundColor" red="0.65179141078061753" green="0.36686829761169965" blue="0.80808775906735753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="XI4-Af-rlG"/>
+                                    <constraint firstAttribute="width" secondItem="boZ-vG-BTr" secondAttribute="height" multiplier="148:97" id="qGB-fK-qEl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <state key="normal" title="Pulse">
+                                    <color key="titleColor" red="0.70113012299999999" green="0.56722594240000002" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pulseTapped:" destination="r4T-Ki-1I7" eventType="touchUpInside" id="j2H-Fj-mQp"/>
+                                </connections>
+                            </button>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x79-ZX-upb">
+                                <rect key="frame" x="50" y="124" width="314" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.70113012299999999" green="0.56722594240000002" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x79-ZX-upb" secondAttribute="height" multiplier="15:8" id="NX2-DN-wTT"/>
+                                    <constraint firstAttribute="height" constant="128" id="fht-9M-CKz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="boZ-vG-BTr" firstAttribute="centerY" secondItem="ke8-Y3-O41" secondAttribute="centerY" id="DLp-d6-trB"/>
+                            <constraint firstItem="boZ-vG-BTr" firstAttribute="centerY" secondItem="ke8-Y3-O41" secondAttribute="centerY" id="Exa-Ye-r8k"/>
+                            <constraint firstItem="boZ-vG-BTr" firstAttribute="centerX" secondItem="ke8-Y3-O41" secondAttribute="centerX" id="MKz-TG-G1L"/>
+                            <constraint firstItem="syP-Lz-naN" firstAttribute="trailing" secondItem="x79-ZX-upb" secondAttribute="trailing" constant="50" id="Z0i-Mz-pD7"/>
+                            <constraint firstItem="x79-ZX-upb" firstAttribute="leading" secondItem="syP-Lz-naN" secondAttribute="leading" constant="50" id="h2H-em-w2S"/>
+                            <constraint firstItem="x79-ZX-upb" firstAttribute="centerX" secondItem="ke8-Y3-O41" secondAttribute="centerX" id="jNJ-lx-en5"/>
+                            <constraint firstItem="x79-ZX-upb" firstAttribute="top" secondItem="syP-Lz-naN" secondAttribute="top" constant="80" id="tkx-mr-E9f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="syP-Lz-naN"/>
+                    </view>
+                    <connections>
+                        <outlet property="customView" destination="x79-ZX-upb" id="DeJ-wM-Vf3"/>
+                        <outlet property="pulseButton" destination="boZ-vG-BTr" id="beK-JW-pSa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PtJ-fD-BrY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.9275362318842" y="-444.64285714285711"/>
+        </scene>
+    </scenes>
+</document>

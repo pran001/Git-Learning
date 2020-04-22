@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>XCTest POC.xcscheme_^#shared#^_</key>
+		<key>Testing in Xcode.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>A85127E32420986D009636A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A85127FE2420A7DE009636A6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

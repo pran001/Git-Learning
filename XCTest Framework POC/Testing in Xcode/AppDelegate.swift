@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  XCTest POC
+//  Testing in Xcode
 //
-//  Created by Pranav Arjun on 20/04/20.
-//  Copyright © 2020 Pranav Arjun. All rights reserved.
+//  Created by Elshad Karimov on 3/17/20.
+//  Copyright © 2020 Elshad Karimov. All rights reserved.
 //
 
 import UIKit

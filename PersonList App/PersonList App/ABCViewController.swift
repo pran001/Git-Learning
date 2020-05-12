@@ -13,7 +13,7 @@ class ABCViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let xyzVC = XYZViewController()
+     //   let xyzVC = XYZViewController()
 //        xyzVC.y;
     }
     

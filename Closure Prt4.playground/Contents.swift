@@ -52,4 +52,23 @@ c = 10
 d = 10
 smarterClosure()
 
+// Completion Handler - Use case of closure
 
+class Pranav {
+    
+    func passClosureToFunction(name: String,completion: () -> String) -> String {
+        
+        print("\(name)")
+        
+        completion()
+        
+        return name
+    }
+    
+    
+}
+
+Pranav().passClosureToFunction(name: "Pranav Name as Parameter") { () -> String in
+
+     "Pranav is returned in closure"
+}

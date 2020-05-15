@@ -5,24 +5,31 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 func getData() {
     
+    DispatchQueue.global(qos: .background).async {
+    
     let session  = URLSession.shared
     let myUrl = URL(string: "https://jsonplaceholder.typicode.com/todos/")
     
-    let task = session.dataTask(with: myUrl!) { (data, response, error) in
+    
         
-        if error == nil{
+        let task = session.dataTask(with: myUrl!) { (data, response, error) in
             
-            let httpResponse = response as! HTTPURLResponse
-            
-            if (httpResponse.statusCode == 200){
+            if error == nil{
                 
-                let jsonData = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+                let httpResponse = response as! HTTPURLResponse
                 
-                print(jsonData!)
+                if (httpResponse.statusCode == 200){
+                    
+                    let jsonData = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers)
+                    
+                    print(jsonData!)
+                }
             }
         }
+        task.resume()
     }
-    task.resume()
+    
+
 }
 
 getData()
